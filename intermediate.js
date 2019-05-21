@@ -2,6 +2,7 @@ var arr = [76,85,65,93,81];
 
 
 
+
 for (var i = 0; i < arr.length; i++) {
 	if (arr[i] < 60) {
 		document.write("You have under 60 points");
@@ -21,3 +22,4 @@ for (var i = 0; i < arr.length; i++) {
 	}
 
 }
+
