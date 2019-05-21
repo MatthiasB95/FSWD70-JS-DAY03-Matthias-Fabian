@@ -1,0 +1,78 @@
+// body {
+// 	background-color: black;
+// }
+
+#headerContainer {
+	border: 1px solid black;
+	height:30%;
+	width:100%;
+	display:flex;
+	justify-content:center;
+
+// first line
+	header {
+		border: 1px solid black;
+		height:10%;
+		width:90%;
+
+
+		#header-line-first{
+			display:flex;
+			justify-content: space-between;
+
+			img {width:30px;}
+
+			#header-line-first-navbar {
+				display:flex;
+				align-items: flex-end;
+			}
+		
+			ul {
+  				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				}
+
+			li {
+			  float: left;
+			}
+
+			li a {
+			  display: block;
+			  padding: 8px;
+			  text-decoration: none;
+			}
+		}
+	// Ender header first line
+
+	#header-line-second {
+		border: 1px solid black;
+		height:10%;
+		display:flex;
+		justify-content: space-between;
+		ul {
+  			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			}
+
+		li {
+			float: left;
+			}
+
+		li a {
+			  display: block;
+			  padding: 8px;
+			  text-decoration: none;
+			}
+
+		#header-line-two-navbar {
+			display:flex;
+			align-items: flex-end;
+
+		}
+		}
+	}
+}
