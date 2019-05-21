@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@media screen and (max-width:480px) {
+    		body {
+        		background-color: lightgreen;
+    		}
+	}
+		@media screen and (min-width: 481px) and (max-width: 800px) {
+    	body {
+        background-color: black;
+    }
+}
+	
+
+	</style>
+</head>
+<body>
+
+	<img src="" id="xchangepic">
+
+
+	<script type="text/javascript" >
+
+		// Exercise 1
+
+		 function random1(min, max) {
+    	return Math.floor (Math.random() * (max - min) + min);
+		 };
+
+		 var temp = random1(-5,26);
+		console.log(temp);
+
+		// between-5 and 10
+
+		if (temp>-5 && temp<10) {
+		 	alert("the weather is moderate");
+		 	document.getElementById("xchangepic").src="sunglasses.jpg";
+		}	
+
+		// bigger than 10
+
+		else if (temp > 9) {
+			alert("the weather is warm ");
+			document.getElementById("xchangepic").src="summer.jpg";
+		}
+
+		// smaller than -5
+
+		else if (temp < -4)  {
+			alert("It is freezing");
+			document.getElementById("xchangepic").src="zero.png";
+		}
+
+		// if ( -5 >= temp)
+
+	</script>
+
+</body>
+</html>
