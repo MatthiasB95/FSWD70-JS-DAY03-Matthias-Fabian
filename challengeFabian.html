@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="addToCart('Pumas')"> Add </button>
+	<button onclick="removeFromCart('Pumas')"> Remove </button>
+
+	<button id="showCart"> my purchase</button>
+
+	<script type="text/javascript">
+		var cart= []; 
+
+		function addToCart(param) {
+			cart.push(param);
+		};
+
+		function removeFromCart (param) {
+			// var array = [2, 5,5, 9];
+			// document.write(array)
+			var index = cart.indexOf(param);
+			if (index > -1) {
+  				cart.splice(index, 1);
+				}
+			}
+
+
+		// document.getElementById("addToCart").onclick = 
+		// function(param) {
+		// 	cart.push("Pumas");
+		// };
+
+
+
+		document.getElementById("showCart").onclick = 
+		function() {
+			alert(cart);
+		};
+
+	</script>
+
+</body>
+</html>
