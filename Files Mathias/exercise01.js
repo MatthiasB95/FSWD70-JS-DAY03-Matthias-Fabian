@@ -35,6 +35,7 @@ function size(wid){
 var wid = window.matchMedia("(max-width: 700px)");
 size(wid);
 wid.addListener(size);
+//select.addEventListener("click",size,false)
 
 
 

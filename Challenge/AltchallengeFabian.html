@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styleFabian.css">
+	<meta charset="utf-8">
+	<title>Challenge</title>
+	<link rel="stylesheet" type="text/css" href="challenge.css">
+</head>
+<body>
+	
+	<div id="headerContainer">
+		<header>
+			<!-- Start firstline Header -->
+			<div id="header-line-first">
+				<div>
+					MAFA Shop
+				</div>	
+				<div>
+					<img src="cart.png" onclick="showCart()">
+				</div>
+				<div id="header-line-first-navbar">
+					<ul>
+						<li><a href="">Home</a></li>
+						<li>|</li>
+						<li><a href="">Tech</a></li>
+						<li>|</li>
+						<li><a href="">Culture</a></li>
+						<li>|</li>
+						<li><a href="">Video</a></li>
+					</ul>
+				</div>
+
+
+			</div>
+			<!-- End firstline Header -->
+
+			<div id="header-line-second">
+				<div id="header-line-two-navbar">
+					<ul>
+							<li><a href="">Test1</a></li>
+							<li><a href="">Test2</a></li>
+							<li><a href="">Test3</a></li>
+							<li><a href="">Test4</a></li>
+							<li><a href="">Test5</a></li>
+							<li><a href="">Test6</a></li>
+					</ul>
+				</div>
+				
+				<div id="header-line-two-navbar">
+					<input type="text" name="search" value="search">
+				</div>
+		</header>
+	</div>	
+
+
+	<div class="text">
+		<span>Some text</span>
+	</div>
+
+	<div class="random">
+			<span class="red">Random</span> Products
+	</div>
+
+	<div class="shoes">
+		
+		<div class="box">
+			<div class="img">
+				<img src="https://images-na.ssl-images-amazon.com/images/I/719lGRxnoNL._UY395_.jpg">
+				<p>Puma1 49.99&euro;</p>
+			</div>
+			<div class="button">
+				<button onclick="addToCart('Pumas1')"> Add </button>
+				<button onclick="removeFromCart('Pumas1')"> Remove </button>
+			</div>
+		</div>	
+
+		<div class="box">
+			<div class="img">
+				<img src="https://4.imimg.com/data4/RE/BI/ANDROID-41682785/product-500x500.jpeg">
+				<p>Nike1 59.99&euro;</p>
+			</div>
+
+			<div class="button">	
+				<button onclick="addToCart('Nike1')"> Add </button>
+				<button onclick="removeFromCart('Nike1')"> Remove </button>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="img">
+				<img src="https://m.media-amazon.com/images/G/01/zappos/landing/pages/adidas/Aug18/4368111._CB1533590374_.jpg">
+				<p>Adidas 139.99&euro;</p>
+			</div>
+
+			<div class="button">
+				<button onclick="addToCart('Adidas1')"> Add </button>
+				<button onclick="removeFromCart('Adidas1')"> Remove </button>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="img">
+				<img src="https://gi.esmplus.com/amazingsea/AASO/SO1000.jpg">
+				<p>Fila1 65.99&euro;</p>
+			</div>
+
+			<div class="button">
+				<button onclick="addToCart('Fila1')"> Add </button>
+				<button onclick="removeFromCart('Fila1')"> Remove </button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="random">
+			<span class="red">Products</span> On Sale
+	</div>
+
+	<div class="shoes">
+		
+		<div class="box">
+			<div class="img">
+				<img src="https://www.pumafirst.com/image/catalog/products/mens-puma-matal-racing-shoes-566906.jpg">
+				<p>Pumas2 29.99&euro;</p>
+			</div>
+			<div class="button">
+				<button onclick="addToCart('Pumas2')"> Add </button>
+				<button onclick="removeFromCart('Pumas2')"> Remove </button>
+			</div>
+		</div>	
+
+		<div class="box">
+			<div class="img">
+				<img src="https://i.etsystatic.com/11017616/r/il/224ffd/1303359064/il_fullxfull.1303359064_4wrr.jpg">
+				<p>Nike2 33.33&euro;</p>
+			</div>
+
+			<div class="button">	
+				<button onclick="addToCart('Nike2')"> Add </button>
+				<button onclick="removeFromCart('Nike2')"> Remove </button>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="img">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCey0Ldv2BgHO79_S0FzfeJ03zkt0U-vdjKoOZyNJymXWF4rs">
+				<p>Adidas2 20.99&euro;</p>
+			</div>
+
+			<div class="button">
+				<button onclick="addToCart('Adidas2')"> Add </button>
+				<button onclick="removeFromCart('Adidas2')"> Remove </button>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="img">
+				<img src="https://i.ebayimg.com/images/g/PqIAAOSwE1BbhiWy/s-l300.jpg">
+				<p>Fila2 1.99&euro;</p>
+			</div>
+
+			<div class="button">
+				<button onclick="addToCart('Fila2')"> Add </button>
+				<button onclick="removeFromCart('Fila2')"> Remove </button>
+			</div>
+		</div>
+		<div class="advertisement">
+			Your advertisement<br>could be here
+		</div>
+	</div>
+
+	
+	<script type="text/javascript">
+		var cart= []; 
+
+		function addToCart(param) {
+			cart.push(param);
+		};
+
+		function removeFromCart (param) {
+			// var array = [2, 5,5, 9];
+			// document.write(array)
+			var index = cart.indexOf(param);
+			if (index > -1) {
+  				cart.splice(index, 1);
+				}
+			}
+
+		function showCart() {
+			alert(cart);
+		};
+
+	</script>
+
+</body>
+</html>

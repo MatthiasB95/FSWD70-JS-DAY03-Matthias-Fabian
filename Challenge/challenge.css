@@ -1,0 +1,40 @@
+img{
+	height: 100px;
+	width: 100px;
+}
+body{
+	background-color: lightgray;
+}
+.text{
+	background-color: white;
+	width: 80%;
+	margin-bottom: 15px;
+}
+
+.shoes{
+	display: flex;
+	flex-direction: row;
+	background-color: green;
+	justify-content: space-around;
+	width: 60%;
+	margin-bottom: 15px;
+	
+}
+.box{
+	display: flex;
+	flex-direction: column;
+}
+.random{
+	background-color: green;
+	width: 60%;
+	margin-bottom: 0 auto;
+}
+.red{
+	color: red;
+}
+
+.advertisement{
+	float: right;
+	background-color: white;
+	height: 80px;
+}
